@@ -1,0 +1,19 @@
+server:
+   port: 8088
+spring:
+   application:
+      name: shirodemo
+   datasource:
+      url: jdbc:mysql://127.0.0.1:3306/enceladus?useSSL=false&autoReconnect=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+   jpa:
+      database: mysql
+      showSql: true
+      hibernate:
+         ddlAuto: none
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.MySQL5Dialect
+            format_sql: true
